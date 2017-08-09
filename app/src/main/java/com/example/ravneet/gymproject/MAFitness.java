@@ -2,9 +2,6 @@ package com.example.ravneet.gymproject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.example.ravneet.gymproject.Activities.AboutUs;
+import com.example.ravneet.gymproject.Activities.Developers;
 import com.example.ravneet.gymproject.Activities.ContactUs;
 import com.example.ravneet.gymproject.Activities.Diet;
 //import com.example.ravneet.gymproject.Activities.Nutrition;
@@ -84,8 +81,8 @@ public class MAFitness extends AppCompatActivity
         if (id == R.id.action_settings) {
             startActivity(new Intent(MAFitness.this, ContactUs.class));
         }
-        else if(id == R.id.action_aboutUs){
-            startActivity(new Intent(MAFitness.this, AboutUs.class));
+        else if(id == R.id.action_developers){
+            startActivity(new Intent(MAFitness.this, Developers.class));
         }
 
         return super.onOptionsItemSelected(item);
