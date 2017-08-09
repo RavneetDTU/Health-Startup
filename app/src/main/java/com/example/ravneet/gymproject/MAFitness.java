@@ -16,8 +16,9 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.example.ravneet.gymproject.Activities.AboutUs;
+import com.example.ravneet.gymproject.Activities.ContactUs;
 import com.example.ravneet.gymproject.Activities.Diet;
-import com.example.ravneet.gymproject.Activities.Nutrition;
+//import com.example.ravneet.gymproject.Activities.Nutrition;
 import com.example.ravneet.gymproject.Activities.Supplements;
 import com.example.ravneet.gymproject.Activities.WorkoutProgram;
 import com.example.ravneet.gymproject.Activities.WorkoutTechnique;
@@ -81,7 +82,7 @@ public class MAFitness extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            startActivity(new Intent(MAFitness.this, ContactUs.class));
         }
         else if(id == R.id.action_aboutUs){
             startActivity(new Intent(MAFitness.this, AboutUs.class));
@@ -98,8 +99,6 @@ public class MAFitness extends AppCompatActivity
 
         if (id == R.id.nav_diet) {
             startActivity(new Intent(MAFitness.this, Diet.class));
-        } else if (id == R.id.nav_nutrition) {
-            startActivity(new Intent(MAFitness.this, Nutrition.class));
         } else if (id == R.id.nav_suppliments) {
             startActivity(new Intent(MAFitness.this, Supplements.class));
         } else if (id == R.id.nav_workoutProgram) {

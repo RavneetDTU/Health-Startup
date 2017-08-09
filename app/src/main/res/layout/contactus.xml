@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:padding="16dp"
+        android:textColor="#F5F5F5"
+        android:text="CONTACT US"
+        android:fontFamily="sans-serif-condensed-bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:textSize="25sp"
+        android:textColor="#F5F5F5"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="PHONE"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="30sp"
+        android:textColor="#F5F5F5"
+        android:text="123456789"
+        android:fontFamily="sans-serif-condensed-bold"
+        android:id="@+id/phone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:textSize="25sp"
+        android:textColor="#F5F5F5"
+        android:fontFamily="sans-serif-condensed-light"
+
+        android:text="@string/EMAIL"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="30sp"
+        android:textColor="#F5F5F5"
+        android:text="@string/email"
+        android:id="@+id/email"
+        android:fontFamily="sans-serif-condensed-bold"
+        />
+
+</LinearLayout>

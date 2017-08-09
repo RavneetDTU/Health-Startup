@@ -10,10 +10,7 @@
             android:title="Workout Programs" />
         <item
             android:id="@+id/nav_diet"
-            android:title="Diet" />
-        <item
-            android:id="@+id/nav_nutrition"
-            android:title="Nutrition" />
+            android:title="Diet And Nutrition" />
         <item
             android:id="@+id/nav_suppliments"
             android:title="Supplements"/>
