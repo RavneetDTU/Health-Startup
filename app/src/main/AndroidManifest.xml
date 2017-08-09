@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ravneet.gymproject">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -21,12 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.AboutUs" />
-        <activity android:name=".Activities.WorkoutTechnique" />
-        <activity android:name=".Activities.WorkoutProgram" />
-        <activity android:name=".Activities.Diet" />
-        <activity android:name=".Activities.Nutrition" />
-        <activity android:name=".Activities.Supplements"></activity>
+        <activity android:name=".Activities.AboutUs"
+            android:label="Developers"/>
+        <activity android:name=".Activities.WorkoutTechnique"
+            android:label="WorkoutTechnique"/>
+        <activity android:name=".Activities.WorkoutProgram"
+            android:label="WorkoutProgram"/>
+        <activity android:name=".Activities.Diet"
+            android:label="Diet And Nutrition"/>
+        <activity android:name=".Activities.ContactUs"
+            android:label="ContactUs"/>
+        <activity android:name=".Activities.Supplements"
+            android:label="Supplements"></activity>
     </application>
 
 </manifest>

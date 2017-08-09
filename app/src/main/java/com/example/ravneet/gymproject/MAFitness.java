@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.example.ravneet.gymproject.Activities.AboutUs;
+import com.example.ravneet.gymproject.Activities.ContactUs;
 import com.example.ravneet.gymproject.Activities.Diet;
 //import com.example.ravneet.gymproject.Activities.Nutrition;
 import com.example.ravneet.gymproject.Activities.Supplements;
@@ -81,7 +82,7 @@ public class MAFitness extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            startActivity(new Intent(MAFitness.this, ContactUs.class));
         }
         else if(id == R.id.action_aboutUs){
             startActivity(new Intent(MAFitness.this, AboutUs.class));
