@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.AboutUs"
+        <activity android:name=".Activities.Developers"
             android:label="Developers"/>
         <activity android:name=".Activities.WorkoutTechnique"
             android:label="WorkoutTechnique"/>

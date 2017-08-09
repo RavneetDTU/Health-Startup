@@ -6,6 +6,6 @@
         android:title="Contact-Us"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_aboutUs"
-        android:title="About-Us"/>
+        android:id="@+id/action_developers"
+        android:title="Developers"/>
 </menu>

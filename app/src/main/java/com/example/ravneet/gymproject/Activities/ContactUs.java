@@ -32,7 +32,7 @@ public class ContactUs extends AppCompatActivity {
             public void onClick(View arg0) {
 
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:0377778888"));
+                callIntent.setData(Uri.parse("tel:+918053131676"));
                   final int REQUEST_PHONE_CALL = 1;
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (ContextCompat.checkSelfPermission(ContactUs.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
@@ -62,7 +62,7 @@ public class ContactUs extends AppCompatActivity {
 //                emailIntent.putExtra(Intent.EXTRA_EMAIL,to);
 //                startActivity(emailIntent);
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto","abc@gmail.com", null));
+                        "mailto","ahlawat15@gmail.com", null));
                 //emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
                 //emailIntent.putExtra(Intent.EXTRA_TEXT, "Body");
                // startActivity(Intent.createChooser(emailIntent, "Send email..."));
