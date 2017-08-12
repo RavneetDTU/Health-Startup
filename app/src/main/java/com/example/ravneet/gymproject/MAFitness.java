@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.ravneet.gymproject.Activities.Developers;
 import com.example.ravneet.gymproject.Activities.ContactUs;
@@ -24,7 +25,7 @@ import com.squareup.picasso.Picasso;
 public class MAFitness extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ImageView iv1,iv2,iv3;
+    ImageView iv1,iv2,iv3,iv4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +46,14 @@ public class MAFitness extends AppCompatActivity
         iv1 = (ImageView) findViewById(R.id.iv_img1);
         iv2 = (ImageView) findViewById(R.id.iv_img2);
         iv3 = (ImageView) findViewById(R.id.iv_img3);
+        iv4 = (ImageView) findViewById(R.id.iv_img4);
+
+        Toast.makeText(this, "Please Switch On Your Internet Connection for Best Experiance", Toast.LENGTH_SHORT).show();
 
         Picasso.with(this).load("https://firebasestorage.googleapis.com/v0/b/gymproject-f3667.appspot.com/o/rsz_img-20170722-wa0015.jpg?alt=media&token=86b52dd2-d12b-4cf8-a1af-505e99ea2253").fit().centerCrop().into(iv1);
         Picasso.with(this).load("https://firebasestorage.googleapis.com/v0/b/gymproject-f3667.appspot.com/o/rsz_img-20170722-wa0017.jpg?alt=media&token=10cc841d-7fdc-4a91-a958-9e354a61dfa6").fit().centerCrop().into(iv2);
         Picasso.with(this).load("https://firebasestorage.googleapis.com/v0/b/gymproject-f3667.appspot.com/o/rsz_img-20170722-wa0019.jpg?alt=media&token=93828bf6-8842-4bb5-9b78-b7a0146b0b79").fit().centerCrop().into(iv3);
+        Picasso.with(this).load("https://firebasestorage.googleapis.com/v0/b/gymproject-f3667.appspot.com/o/app.jpg?alt=media&token=2a32a3ca-2667-4211-9c63-2daef3b645ad").fit().centerCrop().into(iv4);
 
 
     }

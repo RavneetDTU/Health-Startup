@@ -16,7 +16,7 @@ public class WorkoutTechnique extends AppCompatActivity {
         setContentView(R.layout.listview);
         ArrayList<String> workout =new ArrayList<String>();
         workout.add("Muscle Mind Connection");
-        workout.add("Proper Of Workout ");
+        workout.add("Proper form of Workout ");
         workout.add("Proper stretch And Contraction Of Muscles");
         Adapter adapter=new Adapter(this,workout);
         ListView listView = (ListView) findViewById(R.id.list);

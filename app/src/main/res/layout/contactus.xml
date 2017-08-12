@@ -32,7 +32,7 @@
         android:paddingRight="16dp"
         android:textSize="30sp"
         android:textColor="#F5F5F5"
-        android:text="123456789"
+        android:text="8053131676"
         android:fontFamily="sans-serif-condensed-bold"
         android:id="@+id/phone"/>
 
